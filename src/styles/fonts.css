@@ -1,0 +1,27 @@
+.space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.inter {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.roboto-mono {
+  font-family: 'Roboto Mono', monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.roboto-mono-title {
+  font-family: 'Roboto Mono', monospace;
+  font-optical-sizing: auto;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
