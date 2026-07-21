@@ -1,0 +1,18 @@
+* {
+  box-sizing: inherit;
+  color: inherit;
+}
+
+/* inherits */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-synthesis: inherit;
+  text-rendering: inherit;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  letter-spacing: inherit;
+}
