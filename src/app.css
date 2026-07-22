@@ -13,9 +13,12 @@
   --text-invert: hsl(from var(--text) calc(h + 180) s calc(100 - l));
 
   --bg: #1e1e1e;
+  --alt: #343434;
   --border: #e5e4e7;
+  --alt-border: #888888;
   --accent: #ff7bf8;
-  --accent-hover: hsl(from var(--accent) h 212% l);
+  --accent-hover: hsl(from var(--accent) h 82% l);
+  --accent-active: hsl(from var(--accent) h 61% l);
   --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
   --radius: 0.2rem;
 
@@ -53,7 +56,7 @@
 ::selection,
 ::-moz-selection {
   background-color: var(--accent);
-  color: white;
+  color: var(--text-invert);
 }
 
 #app {
@@ -93,5 +96,10 @@ button {
     color: var(--text-invert);
     background-color: var(--accent-hover);
     transform: scale(0.95);
+  }
+
+  &:active {
+    background-color: var(--accent-active);
+    transform: scale(0.9);
   }
 }

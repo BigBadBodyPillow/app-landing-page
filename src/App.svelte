@@ -1,16 +1,18 @@
 <script>
   import Counter from './lib/Counter.svelte';
   import Nav from './lib/Nav.svelte';
+  import RainbowLine from './lib/RainbowLine.svelte';
+  import Hero from './lib/Hero.svelte';
 </script>
 
-<section>
+<!-- rainbow line -->
+<RainbowLine />
+
+<!-- main -->
+<main>
   <!-- nav -->
   <Nav />
 
-  <!-- main -->
-  <main class="container">
-    <h1 class="roboto-mono">Heading</h1>
-
-    <button>test</button>
-  </main>
-</section>
+  <!-- hero -->
+  <Hero />
+</main>

@@ -2,6 +2,9 @@
   box-sizing: inherit;
   color: inherit;
 }
+body {
+  margin: 0;
+}
 
 /* inherits */
 button,
