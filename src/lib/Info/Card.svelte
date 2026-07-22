@@ -6,6 +6,7 @@
   <img alt={imageAlt} src={imageSource} draggable="false" />
   <div class="text">
     <h3>{title}</h3>
+    <!-- usually p tags -->
     {@render children()}
   </div>
 </div>
