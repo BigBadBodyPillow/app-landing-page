@@ -11,7 +11,6 @@
   --text: #fff;
   /* prettier-ignore */
   --text-invert: hsl(from var(--text) calc(h + 180) s calc(100 - l));
-
   --bg: #1e1e1e;
   --alt: #343434;
   --border: #e5e4e7;
@@ -78,6 +77,9 @@
   @media (max-width: 1024px) {
     height: 48px;
   }
+}
+p {
+  font-family: var(--inter);
 }
 
 button {

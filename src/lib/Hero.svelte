@@ -71,9 +71,10 @@
           url('../assets/icons/si--star-fill.svg') 8 1,
           auto;
 
-        transition:
+        /* transition:
           background-image 0.7s allow-discrete,
-          background-attachment 0.7s allow-discrete;
+          background-attachment 0.7s allow-discrete; */
+        transition: background 0.7s allow-discrete;
 
         &::after {
           content: '';
@@ -86,8 +87,9 @@
         }
 
         &:hover {
-          background-attachment: local;
-          background-image: url('../assets/Hero/pexels-jadhav24omkar-10784651.jpg');
+          background: white;
+          /* background-attachment: local;
+          background-size: 200%; */
 
           &:after {
             opacity: 1;
