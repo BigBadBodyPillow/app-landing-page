@@ -5,7 +5,7 @@
 <section>
   <div class="container inter">
     <!-- title -->
-    <h2 class="roboto-mono-title">Info Section</h2>
+    <!-- <h2 class="roboto-mono-title">Info Section</h2> -->
     <!-- card display -->
     <div class="display">
       <!-- card 1-->
@@ -48,7 +48,7 @@
 
 <style>
   section {
-    /* max-width: 1640px; */
+    max-width: 1640px;
     margin-inline: auto;
     margin-block: 4rem;
     background-color: var(--text);
@@ -58,9 +58,10 @@
       text-align: left;
       color: var(--text-invert);
 
-      h2 {
+      /* h2 {
         font-size: xx-large;
-      }
+        margin-bottom: 5rem;
+      } */
 
       .display {
         display: flex;
