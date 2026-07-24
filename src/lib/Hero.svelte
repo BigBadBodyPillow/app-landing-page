@@ -3,13 +3,16 @@
 </script>
 
 <section class="hero">
-  <!-- inside container (has a max width) -->
+  <!-- inside container (has the  max width) -->
   <div class="container">
     <!-- image -->
     <img alt="Hero" src={HeroImage} draggable="false" />
 
     <!-- card -->
     <div class="text-card">
+      <div class="background-layer base"></div>
+      <div class="background-layer hover"></div>
+
       <!-- text -->
       <div class="text-content">
         <h1 class="roboto-mono">Heading</h1>
@@ -62,46 +65,71 @@
         background-color: var(--alt);
         border: 1px solid var(--alt-border);
 
-        background-image: url('../assets/Hero/pexels-kuldeep-nath-1914208466-28784153.jpg');
-        background-size: 100vw 100vh;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-
         cursor:
           url('../assets/icons/si--star-fill.svg') 8 1,
           auto;
+        isolation: isolate;
 
-        /* transition:
-          background-image 0.7s allow-discrete,
-          background-attachment 0.7s allow-discrete; */
-        transition: background 0.7s allow-discrete;
+        .background-layer {
+          position: absolute;
+          inset: 0;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: opacity 0.7s ease;
+          z-index: 0;
+        }
+
+        .background-layer.base {
+          background-image: url('../assets/Hero/pexels-kuldeep-nath-1914208466-28784153.jpg');
+          background-size: 100vw 100vh;
+          background-attachment: fixed;
+        }
+
+        .background-layer.hover {
+          background-image: url('../assets/Hero/ball.gif');
+          background-size: 150%;
+          background-attachment: local;
+          opacity: 0;
+        }
+
+        .text-content {
+          margin-bottom: 2rem;
+          position: relative;
+          z-index: 1;
+          filter: blur(3px);
+        }
 
         &::after {
           content: '';
           position: absolute;
+          display: flex;
           inset: 0;
-          /* background: radial-gradient(200% 100% at top, black 50%, black); */
           background: radial-gradient(200% 100% at top, transparent 50%, black);
           opacity: 0;
           transition: opacity 0.7s;
+          z-index: 0;
         }
 
         &:hover {
-          background: white;
-          /* background-attachment: local;
-          background-size: 200%; */
+          .background-layer.base {
+            opacity: 0;
+          }
+
+          .background-layer.hover {
+            opacity: 1;
+          }
+
+          .text-content {
+            filter: blur(0);
+          }
 
           &:after {
             opacity: 1;
           }
         }
 
-        .text-content {
-          margin-bottom: 2rem;
-          z-index: 1;
-        }
-
         .button-group {
+          position: relative;
           z-index: 1;
           display: flex;
           gap: 0.8rem;
@@ -117,6 +145,15 @@
             url('../assets/icons/flowbite--star-solid.svg') 8 1,
             auto;
         }
+      }
+    }
+  }
+
+  @starting-style {
+    .text-card {
+      &::before {
+        content: '';
+        border: none;
       }
     }
   }

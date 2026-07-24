@@ -22,3 +22,6 @@
 
 - https://www.pexels.com/photo/falling-stars-at-night-10784651/
 - https://www.pexels.com/photo/star-trails-in-the-night-sky-captured-28784153/
+- https://www.pexels.com/photo/picturesque-view-of-santorini-architecture-38464183/
+- https://www.pexels.com/photo/strolling-in-front-of-rustic-colonial-building-38671226/
+- https://www.pexels.com/photo/vibrant-night-at-piccadilly-circus-in-london-38499274/

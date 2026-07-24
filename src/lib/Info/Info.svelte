@@ -1,5 +1,9 @@
 <script>
   import Card from './Card.svelte';
+
+  import feature1 from '../../assets/Info/pexels-david-sams-2162820829-38499274.jpg';
+  import feature2 from '../../assets/Info/pexels-emmanuel-lozano-2162928042-38671226.jpg';
+  import feature3 from '../../assets/Info/pexels-fotodruk-38464183.jpg';
 </script>
 
 <section>
@@ -11,7 +15,7 @@
       <!-- card 1-->
       <Card
         title="This is an example of a feature"
-        imageSource=""
+        imageSource={feature1}
         imageAlt="functionality showcase"
         flipped={false}
       >
@@ -24,7 +28,12 @@
         </p>
       </Card>
       <!-- card 2-->
-      <Card title="Feature 2" imageSource="" imageAlt="functionality showcase" flipped={true}>
+      <Card
+        title="Feature 2"
+        imageSource={feature2}
+        imageAlt="functionality showcase"
+        flipped={true}
+      >
         <p>
           Showcase of feature2. Whoa that a really cool feature. Okay fine i give up, ill use Lorem
           Ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium illum
@@ -34,7 +43,12 @@
         </p>
       </Card>
       <!-- card 3 -->
-      <Card title="Showcase of feature 3" imageSource="" imageAlt="showcase 3 ">
+      <Card
+        title="Showcase of feature 3"
+        imageSource={feature3}
+        imageAlt="showcase 3 "
+        flipped={false}
+      >
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam quod nesciunt nihil
           doloribus perspiciatis officia nemo eligendi odio, voluptates minima hic libero vitae
